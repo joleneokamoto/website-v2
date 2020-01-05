@@ -15,6 +15,12 @@ h1 {
 	padding: 0;
 	margin: 0;
 }
+h2 {
+	font-family: Helvetica;
+	font-size: 50px;
+	padding: 0;
+	margin: 0;
+}
 p {
 	font-family: Consolas, monospace;
 	font-size: 20px;
@@ -41,6 +47,26 @@ section {
 	padding-top: 10%;
 	padding-left: 10%;
 	padding-right: 10%;
+}
+table {
+	width: 80%;
+	border-spacing: 0 50px;
+}
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 7px;
+  padding-bottom: 10px;
+}
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 7px;
+  padding-bottom: 10px;
+}
+.grid-container-1 img, .grid-container-2 img, .container img {
+  display: block;
+  width: 100%;
 }
 
 /*nav styling*/
@@ -92,9 +118,13 @@ a {
 #art a:hover {
 	color: black;
 }
-table {
-	width: 80%;
-	border-spacing: 0 50px;
+.art-subpage {
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.art-text {
+	font-family: Courier New;
 }
 
 /*code page styling*/
