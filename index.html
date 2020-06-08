@@ -5,100 +5,116 @@
 	<meta charset="utf-8">
 	<meta name="description" content="jolene okamoto portfolio">
 	<meta name="author" content="Jolene Okamoto">
-
 	<title>jolene okamoto</title>
 
 	<!-- icon sheet -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 	<!-- style sheet -->
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="third_party/fullpage.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+	<!-- script tags -->
+	<script src="third_party/fullpage.js"></script>
+	<script src="script.js"></script>
 
 </head>
 <body>
-	<!-- home page -->
-	<section id="home">
-		<!-- canvas -->
-		<canvas id="myCanvas"></canvas>
-		<!-- heading -->
-		<div class="full-flex-container">
-			<div class="centered">
-				<h1 class="light"><b>jolene okamoto</b></h1>
-				<div id="line"></div>
+
+	<div id="fullpage">
+		<!-- home page -->
+		<div class="section" id="home">
+			<!-- canvas -->
+			<canvas id="myCanvas"></canvas>
+			<!-- heading -->
+			<div class="full-flex-container">
+				<div class="centered">
+					<h1 class="light"><b>jolene okamoto</b></h1>
+				</div>
+			</div>
+			<!-- arrows -->
+			<a href="#about" id="home-down" class="light">
+				<i class="fas fa-chevron-circle-down fa-2x"></i>
+			</a>
+		</div>
+
+		<!-- about page -->
+		<div class="section" id="about">
+			<div class="subpage">
+				<h1 class="dark">about me</h1>
+				<p class="dark">Welcome!
+					<br /><br />I'm Jolene and I study CS and Design at Northeastern ('22).
+					I enjoy teaching (coding and piano!), problem solving, and expanding past my comfort zone to learn new things.
+					In my free time, I love trying out new recipes and designing villages in Minecraft.
+					<br /><br /><br />Scroll down to see more of my art and code work, or click any of the links below to connect with me!
+					<br /><br />p.s. Many of my Github projects are private but <a href="mailto:okamoto.j@northeastern.edu">contact</a>me for access!
+					<br /><br />
+					<!-- nav links -->
+					<a href="https://github.com/joleneokamoto/" target="_blank">github</a>
+					<a href="https://www.linkedin.com/in/jolene-okamoto-034425173/" target="_blank">linkedin</a>
+					<a href="https://drive.google.com/file/d/1B5c8zkcPnsFPKsI-9hbr32mCFz-72XbJ/view?usp=sharing" target="_blank">resume</a>
+				</p>
 			</div>
 		</div>
-		<!-- arrows -->
-		<a href="#about" id="home-down" class="light">
-			<i class="fas fa-chevron-circle-down fa-2x"></i>
-		</a>
-	</section>
 
-	<!-- about page -->
-	<section id="about">
-		<div class="subpage">
-			<h1 class="dark">about me</h1>
-			<p class="dark">Welcome!
-				<br /><br />I'm Jolene and I study computer science and design at Northeastern University (class of 2022). I enjoy problem solving, teaching, and working on projects, especially games. I love learning new things and going out of my comfort zone with new technologies and tasks.
-				<br /><br />Scroll down to see more of my art and code work, or click any of the links below to connect with me!
-				<br /><br />p.s. Many of my Github projects are private, feel free to email me to request access.
-				<br /><br />
-			</p>
-			<!-- nav links -->
-			<a href="https://github.com/joleneokamoto/" target="_blank">github</a>
-			<a href="https://www.linkedin.com/in/jolene-okamoto-034425173/" target="_blank">linkedin</a>
-			<a href="https://drive.google.com/file/d/1B5c8zkcPnsFPKsI-9hbr32mCFz-72XbJ/view?usp=sharing" target="_blank">resume</a>
+		<!-- code page -->
+		<div class="section" id="code">
+			<div class="subpage">
+				<h1 class="light" id="code-header">code projects</h1>
+				<p class="light">Below are some of the projects I have worked on. Click for more and hover for a brief description.<br /><br /></p>
+				<table>
+					<tr>
+						<td><a href="" title="java implementation of pyramid solitaire using the MVC pattern">pyramid solitaire</a></td>
+						<td><a href="" title="java implementation of basic Excel using MVC pattern">excel</a></td>
+					</tr>
+					<tr>
+						<td><a href="" title="java implementation of Flood It">flood it</a></td>
+						<td><a href="" title="java implementation of Mastermind">mastermind</a></td>
+					</tr>
+					<tr>
+						<td><a href="" title="a beach cleanup game using HTML5 canvas and Javascript">beach cleanup</a></td>
+						<td><a href="" title="a simple math game using Dr.Racket ISL">learn math</a></td>
+					</tr>
+				</table>
+			</div>
 		</div>
-	</section>
 
-	<!-- art page -->
-	<section id="art">
-		<div class="subpage">
-			<h1 class="light" id="art-header">art portfolio</h1>
-			<p class="light">Click a link to see the project. Hover over a link for a brief description.<br /><br /></p>
-			<!-- nav links -->
-			<table>
-				<tr>
-					<td><a href="art/concentration.html" title="a series of 12 pieces documenting my process of creating art as an indecisive person">concentration</a></td>
-					<td><a href="art/system.html" title="a system of designs that introduce Northeastern's art programs">system</a></td>
-				</tr>
-				<tr>
-					<td><a href="art/sacramento.html" title="a zine on random type found in sacramento, california">sacramento</a></td>
-					<td><a href="art/chalet.html" title="a type book that introduces the Chalet typeface">chalet</a></td>
-				</tr>
-				<tr>
-					<td><a href="art/sushi.html" title="a mock logo design for a sushi restaurant">roll it up</a></td>
-					<td><a href="art/day of tears.html" title="a redesign of Day of Tears by Julius Lester">day of tears</a></td>
-				</tr>
-				<tr>
-					<td><a href="art/posters.html" title="various posters ranging from movie posters to recipes">posters</a></td>
-					<td><a href="art/miscellaneous.html" title="random extra art pieces that fit into no particular category">miscellaneous</a></td>
-				</tr>
-			</table>			
+		<!-- art page -->
+		<div class="section" id="art">
+			<div class="subpage">
+				<h1 class="light" id="art-header">art portfolio</h1>
+				<p class="light">Click a link to see the project. Hover over a link for a brief description.<br /><br /></p>
+				<!-- nav links -->
+				<table>
+					<tr>
+						<td><a href="art/concentration.html" title="a series of 12 pieces documenting my process of creating art as an indecisive person">concentration</a></td>
+						<td><a href="art/system.html" title="a system of designs that introduce Northeastern's art programs">system</a></td>
+					</tr>
+					<tr>
+						<td><a href="art/sacramento.html" title="a zine on random type found in sacramento, california">sacramento</a></td>
+						<td><a href="art/chalet.html" title="a type book that introduces the Chalet typeface">chalet</a></td>
+					</tr>
+					<tr>
+						<td><a href="art/sushi.html" title="a mock logo design for a sushi restaurant">roll it up</a></td>
+						<td><a href="art/day of tears.html" title="a redesign of Day of Tears by Julius Lester">day of tears</a></td>
+					</tr>
+					<tr>
+						<td><a href="art/posters.html" title="various posters ranging from movie posters to recipes">posters</a></td>
+						<td><a href="art/miscellaneous.html" title="random extra art pieces that fit into no particular category">miscellaneous</a></td>
+					</tr>
+				</table>
+			</div>
 		</div>
-	</section>
+	</div>
 
-	<!-- code page -->
-	<section id="code">
-		<div class="subpage">
-			<h1 class="light" id="code-header">code projects</h1>
-			<p class="light">Below are some of the projects I have worked on. Click for more and hover for a brief description.<br /><br /></p>
-			<table>
-				<tr>
-					<td><a href="" title="java implementation of pyramid solitaire using the MVC pattern">pyramid solitaire</a></td>
-					<td><a href="" title="java implementation of basic Excel using MVC pattern">excel</a></td>
-				</tr>
-				<tr>
-					<td><a href="" title="java implementation of Flood It">flood it</a></td>
-					<td><a href="" title="java implementation of Mastermind">mastermind</a></td>
-				</tr>
-				<tr>
-					<td><a href="" title="a beach cleanup game using HTML5 canvas and Javascript">beach cleanup</a></td>
-					<td><a href="" title="a simple math game using Dr.Racket ISL">learn math</a></td>
-				</tr>
-			</table>
-		</div>
-	</section>
-
-	<!-- script tags -->
+	<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		scrollingSpeed: 500,
+		navigation: true,
+		navigationPosition:'right'
+	});
+	</script>
 	<script src="script.js"></script>
+
 </body>
 </html>

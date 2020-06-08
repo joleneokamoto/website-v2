@@ -39,7 +39,7 @@ function drawCircle(x, y, color) {
   context.fill();
 }
 
-// create a random number 
+// create a random number
 function randomNum(floor) {
   return Math.random() * Math.floor(floor);
 }
