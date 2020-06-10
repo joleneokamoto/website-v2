@@ -46,6 +46,28 @@ table {
 		background: white;
 }
 
+/* header styling */
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+.header-space {
+	margin-top: 50px;
+}
+.left-link {
+	position: fixed;
+	top: 15px;
+	left: 10px;
+}
+.right-link {
+	position: fixed;
+	top: 15px;
+	right: 10px;
+}
+
 /*nav styling*/
 a {
 	font-family: Consolas, monospace;
@@ -91,7 +113,6 @@ color: #f6d55c;
 }
 
 /* media queries */
-
 @media screen and (min-width: 1400px) {
 	.subpage {
 		padding-top: 5%;
@@ -101,5 +122,12 @@ color: #f6d55c;
 
 	table {
 		margin: auto;
+	}
+
+	.left-link {
+		left: 20%;
+	}
+	.right-link {
+		right: 20%;
 	}
 }
