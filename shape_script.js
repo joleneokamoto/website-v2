@@ -1,7 +1,21 @@
-var canvas = document.getElementById('myCanvas');
-var context = canvas.getContext('2d');
+var canvas
+var context
 var width;
 var height;
+var colors = ['rgb(23, 63, 95, 0.5)', 'rgb(246, 213, 92, 0.5)', 'rgb(119, 136, 153, 0.5'];
+var circles = [];
+var speed = 3;
+
+function init() {
+  canvas = document.getElementById('myCanvas');
+  context = canvas.getContext('2d');
+
+  setCanvasSize();
+  window.addEventListener("resize", setCanvasSize);
+
+  colors.forEach(drawAllCircles);
+  setInterval(moveShapes, 50);
+}
 
 function setCanvasSize() {
   context.canvas.width = window.innerWidth;
@@ -9,12 +23,6 @@ function setCanvasSize() {
   context.canvas.height = window.innerHeight;
   height = window.innerHeight;
 }
-setCanvasSize();
-window.addEventListener("resize", setCanvasSize);
-
-var colors = ['rgb(63, 97, 132, 1)', 'rgb(252, 220, 10, 0.3)', 'rgb(119, 136, 153, 0.2)'];
-var circles = [];
-var speed = 3;
 
 // create all initial circles
 function drawAllCircles(value) {
@@ -44,8 +52,6 @@ function randomNum(floor) {
   return Math.random() * Math.floor(floor);
 }
 
-colors.forEach(drawAllCircles);
-
 // moves shapes based on x, y, and direction
 function moveShapes() {
   context.clearRect(0, 0, width, height);
@@ -72,4 +78,4 @@ function moveY(degree) {
   return speed * Math.sin(degree * Math.PI / 180);
 }
 
-setInterval(moveShapes, 50);
+window.onload = init;

@@ -7,7 +7,6 @@ html, body {
 }
 body {
 	overflow: auto;
-	background: #ed553b;
 }
 h1 {
 	font-family: Helvetica;
@@ -16,7 +15,7 @@ h1 {
 	font-size: 75px;
 }
 p {
-	font-family: Consolas, monospace;
+	font-family: 'Courier New', monospace;
 	font-size: 20px;
 }
 .light {
@@ -34,7 +33,7 @@ p {
 	margin: auto;
 }
 .subpage {
-	padding-top: 10%;
+	padding-top: 5%;
 	padding-left: 10%;
 	padding-right: 10%;
 }
@@ -42,19 +41,65 @@ table {
 	width: 80%;
 	border-spacing: 0 50px;
 }
+/* home page circles */
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-		background: white;
+  background: white;
+}
+a {
+	font-family: 'Courier New', monospace;
+	font-size: 20px;
 }
 
-/* header styling */
-.header {
+/* home page styling (name title page) */
+#myCanvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: #ed553b;
+}
+#home-down {
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+}
+
+/* home page about styling */
+#about {
+	background: #f6d55c;
+}
+#about a {
+	color: #173f5f;
+}
+
+/* home page code styling*/
+#code {
+	background: #778899;
+}
+#code a {
+	color: #f6d55c;
+}
+
+/* home page art styling*/
+#art {
+	background: #173f5f;
+}
+#art a {
+color: #f6d55c;
+}
+
+/* art and code nav styling */
+.nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 50px;
-	background-color: black;
+	background-color: white;
 }
-.header-space {
+.nav a {
+	color: black;
+}
+.nav-space {
 	margin-top: 50px;
 }
 .left-link {
@@ -66,50 +111,6 @@ table {
 	position: fixed;
 	top: 15px;
 	right: 10px;
-}
-
-/*nav styling*/
-a {
-	font-family: Consolas, monospace;
-	font-size: 20px;
-	margin-right: 15px;
-}
-
-/*home page styling*/
-#myCanvas {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-}
-#home-down {
-	position: absolute;
-	left: 50%;
-	bottom: 30px;
-}
-
-/*about page styling*/
-#about {
-	background: #f6d55c;
-}
-#about a {
-	color: #173f5f;
-}
-
-/*code page styling*/
-#code {
-	background: #778899;
-}
-#code a {
-	color: #f6d55c;
-}
-
-/*art page styling*/
-#art {
-	background: #173f5f;
-}
-#art a {
-color: #f6d55c;
 }
 
 /* media queries */
