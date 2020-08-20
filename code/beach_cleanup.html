@@ -1,0 +1,58 @@
+../<!doctype html>
+<html lang="en">
+<head>
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="jolene okamoto chalet">
+  <meta name="author" content="Jolene Okamoto">
+
+  <title>jolene okamoto</title>
+
+  <!-- icon sheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <!-- style sheet -->
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles/subpage_styles.css">
+
+  <script type="text/javascript" src="../scripts/beach_script.js"></script>
+
+</head>
+<body>
+
+  <div class="nav">
+    <a href="../index.html#code" class="left-link">all projects</a>
+    <a href="math.html" class="right-link">learn math</a>
+  </div>
+
+  <div class="subpage nav-space">
+    <h1 class="dark">beach cleanup</h1>
+    <p>an HTML5 game <a href="https://github.com/joleneokamoto/beach-cleanup" target="_blank">github</a>
+    </p>
+    <canvas id="beachCanvas" width="800" height="500"></canvas>
+    <br /><br />
+    <button onclick="pause_music()">Pause Music</button>
+    <button onclick="start_music()">Play Music</button>
+  </div>
+  <audio id="walk">
+      <source src="../images/beach_cleanup/Sounds/walking.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Ocean music recorded by Mike Koenig fromhttp://soundbible.com/1935-Ocean-Waves.html-->
+    <audio id="ocean">
+      <source src="../images/beach_cleanup/Sounds/ocean.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Coin sound recorded by Alexander from http://www.orangefreesounds.com/coin-sound/-->
+    <audio id="coin">
+      <source src="../images/beach_cleanup/Sounds/coins.mp3" type="audio/mpeg">
+    </audio>
+    <img id="martin" src="../images/beach_cleanup/martin.png" style="display:none">
+    <img id="bottle" src="../images/beach_cleanup/bottle.png" style="display:none">
+    <img id="pizza" src="../images/beach_cleanup/pizza.png" style="display:none">
+    <img id="paper" src="../images/beach_cleanup/paper.png" style="display:none">
+    <img id="plastic" src="../images/beach_cleanup/plasticbag.png" style="display:none">
+    <img id="beach" src="../images/beach_cleanup/beach.png" style="display:none">
+    <img id="menu" src="../images/beach_cleanup/menu.png" style="display:none">
+    <img id="shop" src="../images/beach_cleanup/shop.png" style="display:none">
+
+</body>
+</html>

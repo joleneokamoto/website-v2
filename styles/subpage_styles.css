@@ -1,6 +1,6 @@
 /* general styling */
 h1 {
-	font-size: 25px;
+	font-size: 30px;
 }
 .grid-container-2 {
 	display: grid;
@@ -17,5 +17,6 @@ h1 {
 .grid-container-1 img, .grid-container-2 img {
 	display: block;
 	width: 100%;
+	height: auto;
 	max-height: 90vh;
 }
